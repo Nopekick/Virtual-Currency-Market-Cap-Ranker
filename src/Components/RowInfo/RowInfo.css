@@ -1,0 +1,27 @@
+.up{
+  color: green;
+}
+
+.down{
+  color: red;
+}
+
+.row {
+  height: 30px;
+}
+
+.number{
+  width: 20px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+.name{
+  padding-right: 40px;
+}
+
+td{
+  padding: 10px 30px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
