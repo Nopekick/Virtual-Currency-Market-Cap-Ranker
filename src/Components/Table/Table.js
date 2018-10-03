@@ -24,7 +24,8 @@ class Table extends Component {
           price:  parseFloat(coin.USD.PRICE).toFixed(2),
           volume: parseFloat(coin.USD.VOLUME24HOUR).toFixed(2),
           supply: parseFloat(coin.USD.SUPPLY).toFixed(2),
-          change: parseFloat(coin.USD.CHANGEPCT24HOUR).toFixed(2)
+          change: parseFloat(coin.USD.CHANGEPCT24HOUR).toFixed(2),
+          lastTradeID: parseFloat(coin.USD.LASTTRADEID).toFixed(2)
         }
         let currencies = this.state.currencies.slice()
         currencies.push(temp)
@@ -56,6 +57,7 @@ class Table extends Component {
                 <td>Volume(24h)</td>
                 <td>Circulating Supply</td>
                 <td>Change (24h)</td>
+                <td>Last Trade ID</td>
               </tr>
             </thead>
             <tbody>{currencies}</tbody>
